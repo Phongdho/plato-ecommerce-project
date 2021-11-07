@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+* {
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px lightgray;
+}
+
+.fa-shopping-cart {
+    color: rgba(255,255,255,.55)!important;
+}
+.fa-shopping-cart:hover {
+    color: white !important ;
+}
+.nav-left {
+    color: rgba(255,255,255,.55) !important;
+}
+.nav-tab:hover  {
+    color: white !important ;
+}
+
+.hello-container {
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+.hello-main {
+    transform: translateY(38%);
+    width: 70vw;
+    height: 50vh;
+    border-radius: 20px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hello-text {
+    font-size: 5rem;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1rem;
+    padding-bottom: 2rem;
+}
+
+.hello-button {
+    width: 20%;
+    background-color: lightsteelblue !important;
+    border: none !important;
+    overflow: hidden;
+    color: white;
+}
+
+.hello-button:hover {
+    background-color: steelblue !important;
+}
+
