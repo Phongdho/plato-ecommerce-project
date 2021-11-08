@@ -28,7 +28,7 @@ const CartPage = () => {
         <Container>
           <Row className="justify-content-center">
             <Col md={6}>
-              <h1 className="text-center" style={{marginTop:"2rem", marginBottom: "3rem", color:"gray"}}>Your Cart</h1>
+              <h1 className="text-center cart-title" style={{marginTop:"2rem", marginBottom: "3rem", color:"gray"}}>Your Cart</h1>
               <hr />
             </Col>
           </Row>

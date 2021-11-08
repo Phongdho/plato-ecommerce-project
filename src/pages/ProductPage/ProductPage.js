@@ -5,6 +5,7 @@ import productActions from "../../redux/actions/product.action";
 import PaginationBar from "../../components/PaginationBar";
 import { ClipLoader } from "react-spinners";
 import {useHistory} from 'react-router-dom';
+import "./ProductPage.css"
 
 const ProductPage = () => {
     const [pageNum, setPageNum] = useState(1);
@@ -29,7 +30,7 @@ const ProductPage = () => {
         <Container>
       <Row>
         <Col>
-          <h1 className="text-center" style={{marginTop:"2rem", marginBottom: "3rem", color:"gray"}}>Our Apple Offerings</h1>
+          <h1 className="text-center product-title" style={{marginTop:"2rem", marginBottom: "3rem", color:"gray"}}>Our Apple Offerings</h1>
           {errorMessage && <Alert variant="danger">{errorMessage}</Alert>}
           {loading ? (
             <div className="text-center">
