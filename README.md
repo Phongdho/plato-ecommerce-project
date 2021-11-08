@@ -3,7 +3,7 @@
 > This project is to implement React JS and Redux to create an E-commerce website with API sponsored by CoderSchool, as this is a weekly project for Fullstack Web Development bootcamp at CoderSchool;
 
 >
-><strong>Abstract:</strong><em> "Plato" is a young officially authorized e-commerce website retailing Apple products exclusively.</em>
+><strong>Abstract:</strong><em> "Plato" is a new e-commerce website, verified as an authorized reseller of Apple, retailing Apple products exclusively.</em>
 
 ## Feature Overview:
 - User are welcomed to the landing page with Apple's inspired aesthetic; 
