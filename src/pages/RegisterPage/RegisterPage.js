@@ -4,6 +4,8 @@ import "./RegisterPage.css";
 import authAction from "../../redux/actions/auth.action";
 import {useDispatch} from "react-redux";
 import {useHistory} from 'react-router-dom';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const RegisterPage = () => {
 
@@ -27,7 +29,8 @@ const RegisterPage = () => {
 
     return (
         <div className="register-form">
-        <Form onSubmit={handleSubmit}>
+        <h3 className="register-title">Join us</h3>
+        <Form onSubmit={handleSubmit} className="register-main">
             <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label><strong>Name: </strong></Form.Label>
                 <Form.Control type="text" placeholder="Enter Name" name="name" value={name} onChange={handleOnChange}/>
@@ -43,10 +46,11 @@ const RegisterPage = () => {
                 <Form.Control type="password" placeholder="Password" name="password" value={password} onChange={handleOnChange} />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" style={{backgroundColor:"lightsteelblue", border:"none", marginTop:'1rem'}}>
                 Register
             </Button>
         </Form>
+        <ToastContainer autoClose={2000} />
     </div>
     )
 }

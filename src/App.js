@@ -10,7 +10,7 @@ import PublicNavbar from "./components/PublicNavbar";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import CartPage from "./pages/CartPage/CartPage";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
-import ProductPage from "./pages/ProductPage/ProductPage"
+import ProductPage from "./pages/ProductPage/ProductPage";
 
 function App() {
 

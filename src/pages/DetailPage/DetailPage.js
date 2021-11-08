@@ -5,7 +5,9 @@ import { ClipLoader } from "react-spinners";
 import { useDispatch, useSelector } from "react-redux";
 import productActions from "../../redux/actions/product.action";
 import userActions from "../../redux/actions/user.action";
-import "./DetailPage.css"
+import "./DetailPage.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const DetailPage = () => {
     const [addingProductToCart, setAddingProductToCart] = useState(false);
@@ -53,7 +55,8 @@ const DetailPage = () => {
                      style={{
                          paddingTop: "5rem",
                          paddingBottom: "5rem",
-                         borderRadius: "20px"
+                         borderRadius: "20px", 
+                         boxShadow:"1px 1px lightgray"
                      }}>
                 <Col md={3}>
                     {product && (
@@ -94,6 +97,7 @@ const DetailPage = () => {
                         <br />
                         <div>
                         <Button onClick={handleReviewSubmit} style={{backgroundColor:"lightsteelblue", border:"none", color:"black"}}>Send review</Button>
+                        <ToastContainer autoClose={2000} />
                         </div>
                     </>
                     )}

@@ -4,7 +4,9 @@ import { ClipLoader } from "react-spinners";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import userActions from "../../redux/actions/user.action";
-import "./CartPage.css"
+import "./CartPage.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const CartPage = () => {
     const history = useHistory();
@@ -51,6 +53,7 @@ const CartPage = () => {
                           display: "flex",
                           flexDirection:"row",
                           alignContent: "space-around",
+                          MozBoxShadow:"1px 1px lightgray"
                         }}
                       >
                         <Card.Img
@@ -83,6 +86,7 @@ const CartPage = () => {
               <div style={{textAlign:"right", width:"60vw", marginTop:"2rem"}}>
               <Button
                 onClick={handleOrder} style={{backgroundColor:"lightsteelblue", border:"none", color:"black", marginBottom:'2rem'}}>Checkout</Button>
+              <ToastContainer autoClose={2000} />
               </div>
             </Col>
           </Row>

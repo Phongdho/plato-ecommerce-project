@@ -52,6 +52,7 @@ const ProductPage = () => {
                       padding: "0.5rem",
                       borderRadius: "10px",
                       border: "1px solid lightsteelblue",
+                      boxShadow: "1px 1px lightsteelblue",
                     }}
                     className="cardAnimation"
                   >

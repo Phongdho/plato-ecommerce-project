@@ -4,6 +4,8 @@ import "./LoginPage.css";
 import authAction from "../../redux/actions/auth.action";
 import {useDispatch } from "react-redux";
 import {useHistory} from 'react-router-dom';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const LoginPage = () => {
     let [dataForm, setDataForm] = useState({
@@ -24,10 +26,9 @@ const LoginPage = () => {
     };
 
     return (
-        <div className="register-form"
-             style={{
-             }}>
-        <Form onSubmit={handleSubmit}>
+        <div className="login-form">
+        <h3 className="login-title">Sign in to shop</h3>
+        <Form onSubmit={handleSubmit} className="login-main">
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label><strong>Email address:</strong></Form.Label>
@@ -39,10 +40,11 @@ const LoginPage = () => {
                 <Form.Control type="password" placeholder="Password" name="password" value={password} onChange={handleOnChange} />
             </Form.Group>
 
-            <Button variant="primary" type="submit">
+            <Button variant="primary" type="submit" style={{backgroundColor:"lightsteelblue", border:"none", marginTop:'1rem'}}>
                 Login
             </Button>
         </Form>
+        <ToastContainer autoClose={2000} />
     </div>
     )
 }
