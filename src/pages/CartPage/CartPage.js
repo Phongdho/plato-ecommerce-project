@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 import { ClipLoader } from "react-spinners";
 import { useDispatch, useSelector } from "react-redux";
@@ -23,7 +23,7 @@ const CartPage = () => {
 
     useEffect(() => {
         dispatch(userActions.getCartProduct());
-    }, []);
+    }, [dispatch]);
     return (
         <Container>
           <Row className="justify-content-center">
@@ -82,7 +82,7 @@ const CartPage = () => {
               </div>
               <div style={{textAlign:"right", width:"60vw", marginTop:"2rem"}}>
               <Button
-                onClick={handleOrder} style={{backgroundColor:"lightsteelblue", border:"none", color:"black"}}>Checkout</Button>
+                onClick={handleOrder} style={{backgroundColor:"lightsteelblue", border:"none", color:"black", marginBottom:'2rem'}}>Checkout</Button>
               </div>
             </Col>
           </Row>

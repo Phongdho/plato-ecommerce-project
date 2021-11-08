@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./RegisterPage.css";
 import authAction from "../../redux/actions/auth.action";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch} from "react-redux";
 import {useHistory} from 'react-router-dom';
 
 const RegisterPage = () => {
 
-    const [dataForm, setDataForm] = useState({
+    let [dataForm, setDataForm] = useState({
         name: "",
         email: "",
         password: ""
     });
-    const {name, email, password} = dataForm;
+    let {name, email, password} = dataForm;
 
     const handleOnChange = (e) => {
         setDataForm({...dataForm, [e.target.name]:e.target.value});

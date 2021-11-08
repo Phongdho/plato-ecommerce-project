@@ -1,5 +1,4 @@
 import api from "../../apiService";
-import { toast } from "react-toastify";
 import * as types from "../constants/product.constant";
 
 const productActions = {};

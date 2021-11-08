@@ -3,7 +3,7 @@ import * as types from "../constants/auth.constant";
 const initialState = {
     user: null,
     loading: false,
-    // isAuthenticated: false,
+    isAuthenticated: false,
 };
 
 const authReducer = (state = initialState, action) => {

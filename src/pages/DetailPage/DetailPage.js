@@ -29,11 +29,11 @@ const DetailPage = () => {
     if (addingProductToCart) {
         dispatch(userActions.addToCart({addingProductToCart}))
     }
-    }, [addingProductToCart]);
+    }, [dispatch, addingProductToCart]);
 
     useEffect(() => {
         dispatch(productActions.getSingleProduct({productId}));
-    }, [productId]);
+    }, [dispatch, productId]);
     const handleReviewInput = (e) => {
         e.preventDefault();
         setReview(e.target.value);
@@ -60,7 +60,7 @@ const DetailPage = () => {
                     <img
                         className="w-100"
                         src={product?.imageUrls[0]}
-                        alt="Product Image"
+                        alt=""
                     />
                     )}
                 </Col>

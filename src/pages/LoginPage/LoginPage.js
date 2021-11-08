@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import "./LoginPage.css";
 import authAction from "../../redux/actions/auth.action";
-import {useDispatch, useSelector} from "react-redux";
+import {useDispatch } from "react-redux";
 import {useHistory} from 'react-router-dom';
 
 const LoginPage = () => {
-    const [dataForm, setDataForm] = useState({
+    let [dataForm, setDataForm] = useState({
         email: "",
         password: ""
     });
-    const {email, password} = dataForm;
+    let {email, password} = dataForm;
 
     const handleOnChange = (e) => {
         setDataForm({...dataForm, [e.target.name]:e.target.value});

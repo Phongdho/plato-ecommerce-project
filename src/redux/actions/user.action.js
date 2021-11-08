@@ -10,7 +10,7 @@ userActions.getCurrentUser = () => async (dispatch) => {
         dispatch({type: types.GET_SINGLE_USER_REQUEST});
         const res = await api.get("/users/me");
         // console.log("res is", res)
-        dispatch({type: types.GET_SINGLE_USER_SUCCESS});
+        dispatch({type: types.GET_SINGLE_USER_SUCCESS, payload: res.data});
     } catch (err) {
         console.log(err);
         dispatch({type: types.GET_SINGLE_USER_FAIL});
@@ -26,7 +26,7 @@ userActions.addToCart = ({addingProductToCart}) => {
                 "productId": addingProductToCart,
                 "quantity": 1
             });
-            dispatch({type: types.ADD_TO_CART_SUCCESS});
+            dispatch({type: types.ADD_TO_CART_SUCCESS, payload: res.data});
             toast.success("Item has successfully been added to your cart");
         } catch (err) {
             console.log(err);

@@ -16,9 +16,10 @@
 - User can login;
 - Authorized User (who has signed up and logged in) can add product to cart;
 - User can see cart detail;
-- User can post a review with a validated order;
+- User can check out and order will be created;
+- User with an authorized order can post a review with a validated order;
 
-##Technologies:
+## Technologies:
 Project is created with: 
 * React JS
 * Redux
