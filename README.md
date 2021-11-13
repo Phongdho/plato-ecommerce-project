@@ -5,6 +5,66 @@
 >
 ><strong>Abstract:</strong><em> "Plato" is a new e-commerce website, verified as an authorized reseller of Apple, retailing Apple products exclusively.</em>
 
+## File Structure
+```
+|- plato-ecommerce-project/src
+    |- components
+        |- PaginationBar.js
+        |- PublicNavbar.js
+    |- pages
+        |- CartPage
+            |- CartPage.css
+            |- CartPage.js
+        |- DetailPage
+            |- DetailPage.css
+            |- DetailPage.js
+            |- Youtube.js
+        |- HomePage
+            |- HomePage.css
+            |- HomePage.js
+        |- LoginPage
+            |- LoginPage.css
+            |- LoginPage.js
+        |- ProductPage
+            |- ProductPage.css
+            |- ProductPage.js
+        |- RegisterPage
+            |- RegisterPage.css
+            |- RegisterPage.js
+    |- redux
+        |- actions
+            |- auth.action.js
+            |- product.action.js
+            |- user.action.js
+        |- constant
+            |- auth.constant.js
+            |- product.constant.js
+            |- user.constant.js
+        |- reducers
+            |- auth.reducer.js
+            |- product.reducer.js
+            |- user.reducer.js
+            |- index.js
+        |- store.js
+    |- App.css
+    |- App.js
+    |- index.js
+```
+
+## UI Layout:
+* HomePage Banner 
+![Layout](image/homepage.png)
+* Product Display Page
+![Layout](image/productpage.png)
+![Layout](image/responsive-product.png)
+* Product Detail Page
+![Layout](image/detailpage.png)
+![Layout](image/responsive-detail.png)
+* Register Page
+![Layout](image/registerpage.png)
+* Cart Page
+![Layout](image/cartpage.png)
+
 ## Feature Overview:
 - User are welcomed to the landing page with Apple's inspired aesthetic; 
 - User can easily navigate to Product Page displaying the site's list of products; 
