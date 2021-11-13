@@ -18,8 +18,10 @@
 .register-main {
     width: 25rem;
     margin: 0 auto;
-    border: 1px solid lightgray;
+    border: none;
     border-radius: 20px;
     padding:  4rem 2rem;
-    box-shadow: 2px 2px lightgray;
+    box-shadow:
+        12px 12px 16px 0 rgba(0,0,0,0.25),
+        -6px -6px 12px 0 rgba(255,255,255,0.3);
 }

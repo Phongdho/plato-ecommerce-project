@@ -37,7 +37,7 @@ const ProductPage = () => {
               <ClipLoader color="#f86c6b" size={150} loading={true} />
             </div>
           ) : (
-            <ul className="list-unstyled d-flex flex-wrap justify-content-between">
+            <ul className="list-unstyled d-flex flex-wrap justify-content-around" style={{margin:"auto 0", width: "100%"}}>
               {products.map((product) => (
                 <li
                 key={product._id}
@@ -47,12 +47,9 @@ const ProductPage = () => {
                     style={{
                       width: "20rem",
                       marginBottom: "2rem",
-                      marginRight: "1rem",
-                      marginLeft: "1rem",
-                      padding: "0.5rem",
-                      borderRadius: "10px",
-                      border: "1px solid lightsteelblue",
-                      boxShadow: "1px 1px lightsteelblue",
+                      marginRight: "3rem",
+                      marginLeft: "3rem",
+                      padding: "0.5rem"
                     }}
                     className="cardAnimation"
                   >

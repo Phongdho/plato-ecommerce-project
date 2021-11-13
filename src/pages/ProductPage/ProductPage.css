@@ -8,3 +8,12 @@
     font-size: 3rem;
     padding-bottom: 1rem;
 }
+
+.cardAnimation {
+    border-radius: 30px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 
+        12px 12px 16px 0 rgba(0,0,0,0.15),
+        -8px -8px 12px 0 rgba(255,255,255,0.7);
+}

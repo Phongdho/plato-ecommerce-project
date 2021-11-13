@@ -51,12 +51,11 @@ const DetailPage = () => {
                 <ClipLoader color="#f86c6b" size={150} loading={true} />
                 </div>
             ) : (
-                <Row className="border mt-5"
+                <Row className="border mt-5 detailBox"
                      style={{
                          paddingTop: "5rem",
                          paddingBottom: "5rem",
                          borderRadius: "20px", 
-                         boxShadow:"1px 1px lightgray"
                      }}>
                 <Col md={3}>
                     {product && (
@@ -84,7 +83,7 @@ const DetailPage = () => {
                         </div>
                         <br />
                         <div>
-                        <Button onClick={() => addToCart(product)} style={{backgroundColor:"lightsteelblue", border:"none", color:"black"}}>
+                        <Button onClick={() => addToCart(product)} style={{backgroundColor:"lightsteelblue", border:"none", color:"white"}}>
                         Add to Cart
                         </Button>{" "}
                         </div>
@@ -92,11 +91,11 @@ const DetailPage = () => {
                         <div>
                         <strong>Write us your review</strong>
                         <br />
-                        <textarea key="review" rows="5" cols="50" onChange={handleReviewInput}></textarea>
+                        <textarea key="review" rows="5" cols="50" onChange={handleReviewInput} style={{border:"1px solid lightgray", borderRadius:"10px"}}></textarea>
                         </div>
                         <br />
                         <div>
-                        <Button onClick={handleReviewSubmit} style={{backgroundColor:"lightsteelblue", border:"none", color:"black"}}>Send review</Button>
+                        <Button onClick={handleReviewSubmit} style={{backgroundColor:"lightsteelblue", border:"none", color:"white"}}>Send review</Button>
                         <ToastContainer autoClose={2000} />
                         </div>
                     </>

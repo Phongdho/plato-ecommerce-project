@@ -45,6 +45,7 @@ const CartPage = () => {
                   {products && products.map((product) => (
                     <li key={product._id}>
                       <Card
+                        className="cartContainer"
                         style={{
                           borderRadius: "20px",
                           padding: "1rem",
@@ -53,7 +54,6 @@ const CartPage = () => {
                           display: "flex",
                           flexDirection:"row",
                           alignContent: "space-around",
-                          MozBoxShadow:"1px 1px lightgray"
                         }}
                       >
                         <Card.Img
@@ -67,8 +67,8 @@ const CartPage = () => {
                           <Card.Text style={{color:"gray"}}>By: {product.productId.description}</Card.Text>
                           <Card.Text>Quantity: {product.quantity}</Card.Text>
                           <Button
-                            className="position-absolute btn-secondary"
-                            style={{ top: "10px", right: "10px" }}
+                            className="position-absolute btn-light"
+                            style={{ top: "10px", right: "10px"}}
                             size="sm"
                             // onClick={() => removeProduct(product._id)}
                           >
@@ -85,7 +85,7 @@ const CartPage = () => {
               </div>
               <div style={{textAlign:"right", width:"60vw", marginTop:"2rem"}}>
               <Button
-                onClick={handleOrder} style={{backgroundColor:"lightsteelblue", border:"none", color:"black", marginBottom:'2rem'}}>Checkout</Button>
+                onClick={handleOrder} style={{backgroundColor:"lightsteelblue", border:"none", color:"white", marginBottom:'2rem'}}>Checkout</Button>
               <ToastContainer autoClose={2000} />
               </div>
             </Col>
